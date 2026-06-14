@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Тренинги и коучинг для подростков 12–17 лет. Помогаем найти себя, развить уверенность и коммуникацию.">
     <title>СтартЗдесь — Тренинги для подростков</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <!-- ШАПКА -->
-
 <header id="header">
     <div class="container">
         <nav class="nav">
@@ -20,19 +23,22 @@
                 <img src="images/logo.png" alt="СтартЗдесь">
             </a>
 
+            <button class="nav-toggle" aria-label="Меню" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
             <ul class="nav-links">
                 <li><a href="#about">О нас</a></li>
-                <li><a href="#programs">Программы</a></li>
                 <li><a href="#services">Услуги</a></li>
+                <li><a href="#programs">Программы</a></li>
                 <li><a href="#team">Команда</a></li>
-                <li><a href="#prices">Цены</a></li>
                 <li><a href="#reviews">Отзывы</a></li>
                 <li><a href="#contacts">Контакты</a></li>
             </ul>
 
             <div class="nav-buttons">
-                <a href="https://vk.com/" class="btn btn-teal" target="_blank">ВКонтакте</a>
-                <a href="https://wa.me/" class="btn btn-coral" target="_blank">WhatsApp</a>
+                <a href="https://vk.com/liubov_psiholog" class="btn btn-teal btn-sm" target="_blank">ВКонтакте</a>
+                <a href="https://wa.me/79137837896" class="btn btn-coral btn-sm" target="_blank">WhatsApp</a>
             </div>
 
         </nav>
@@ -45,21 +51,26 @@
         <div class="hero-inner">
 
             <div class="hero-text">
+                <span class="hero-eyebrow">Тренинги и коучинг 12–17 лет</span>
                 <h1 class="hero-title">
-                    Помогаем подросткам<br>
-                    <span>найти себя и раскрыть потенциал</span>
+                    Поможем подростку <span>поверить в себя</span> и научиться действовать
                 </h1>
                 <p class="hero-subtitle">
-                    Тренинги и коучинг для подростков 12–17 лет.
-                    Работаем с уверенностью, общением и целями.
+                    Программы для подростков и родителей: уверенность, общение, цели и опора в выборе пути.
+                    Работаем бережно, без давления и нравоучений.
                 </p>
                 <div class="hero-buttons">
-                    <a href="https://vk.com/" class="btn btn-teal" target="_blank">
-                        Записаться в ВКонтакте
+                    <a href="https://wa.me/79137837896" class="btn btn-coral" target="_blank">
+                        Записаться на консультацию
                     </a>
-                    <a href="https://wa.me/" class="btn btn-coral" target="_blank">
-                        Написать в WhatsApp
+                    <a href="#programs" class="btn btn-outline">
+                        Посмотреть программы
                     </a>
+                </div>
+                <div class="hero-trust">
+                    <div><strong>10+</strong> лет практики</div>
+                    <div><strong>300+</strong> подростков</div>
+                    <div><strong>Очно и онлайн</strong></div>
                 </div>
             </div>
 
@@ -70,8 +81,43 @@
     </div>
 </section>
 
+<!-- ПРОБЛЕМА / БОЛЬ -->
+<section id="problem" class="section-padding">
+    <div class="container">
+
+        <h2 class="section-title section-title--center">Знакомо?</h2>
+        <p class="section-subtitle section-subtitle--center">
+            То, с чем родители и подростки приходят к нам чаще всего
+        </p>
+
+        <div class="problem-grid">
+            <div class="problem-card">
+                <div class="problem-icon">😔</div>
+                <h3 class="problem-title">Закрылся и молчит</h3>
+                <p class="problem-desc">Ребёнок не делится тем, что чувствует. Контакт теряется, и непонятно, как его вернуть.</p>
+            </div>
+            <div class="problem-card">
+                <div class="problem-icon">😟</div>
+                <h3 class="problem-title">Не верит в себя</h3>
+                <p class="problem-desc">Боится ошибок, сравнивает себя с другими, отказывается пробовать новое из-за страха неудачи.</p>
+            </div>
+            <div class="problem-card">
+                <div class="problem-icon">🤐</div>
+                <h3 class="problem-title">Трудно общаться</h3>
+                <p class="problem-desc">Сложности со сверстниками, конфликты, зажатость на публике, страх выступать.</p>
+            </div>
+            <div class="problem-card">
+                <div class="problem-icon">🧭</div>
+                <h3 class="problem-title">Не знает, чего хочет</h3>
+                <p class="problem-desc">Нет интересов, не выбрал направление, прокрастинация и потеря смысла учёбы.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 <!-- О ПСИХОЛОГЕ -->
-<section id="about" class="section-padding">
+<section id="about" class="section-padding section-light">
     <div class="container">
         <div class="about-inner">
 
@@ -80,14 +126,16 @@
             </div>
 
             <div class="about-text">
-                <h2 class="section-title">О психологе</h2>
-                <p class="section-subtitle">Дипломированный специалист с 10-летним опытом работы с подростками</p>
-
+                <span class="eyebrow">О специалисте</span>
+                <h2 class="section-title">Я рядом с подростком — без оценки и давления</h2>
                 <p class="about-desc">
-                    Меня зовут [Имя]. Я детский и подростковый психолог, сертифицированный коуч.
-                    Помогаю подросткам справляться с неуверенностью, находить свои сильные стороны
-                    и выстраивать отношения с собой и окружающими.
+                    Меня зовут Любовь Яковлева. Я дипломированный психолог для подростков и родителей.
+                    Помогаю справиться с тревогой, стрессом, страхами и психосоматическими проблемами.
+                    Работаю мягко и без давления: подросток открывается, а дома возвращается спокойный
+                    диалог. Если не знаете, с чего начать — приходите на бесплатную консультацию,
+                    разберём ваш запрос вместе.
                 </p>
+                <p class="about-formats">Индивидуальные консультации · Авторские групповые программы · Очно и онлайн</p>
 
                 <div class="about-facts">
                     <div class="fact">
@@ -109,12 +157,12 @@
     </div>
 </section>
 
-<!-- ПРОГРАММЫ И УСЛУГИ -->
-<section id="programs" class="section-padding">
+<!-- УСЛУГИ -->
+<section id="services" class="section-padding">
     <div class="container">
 
-        <h2 class="section-title" style="text-align: center;">Программы и услуги</h2>
-        <p class="section-subtitle" style="text-align: center;">Выберите подходящий формат работы для вашего ребёнка</p>
+        <h2 class="section-title section-title--center">Форматы работы</h2>
+        <p class="section-subtitle section-subtitle--center">Выберите подходящий формат для вашего ребёнка</p>
 
         <div class="programs-grid">
 
@@ -127,10 +175,11 @@
                     <li>Формат: онлайн или очно</li>
                     <li>Возраст: 12–17 лет</li>
                 </ul>
-                <a href="https://wa.me/" class="btn btn-teal" target="_blank">Записаться</a>
+                <a href="https://wa.me/79137837896" class="btn btn-teal" target="_blank">Записаться</a>
             </div>
 
             <div class="program-card program-card--featured">
+                <span class="card-badge">Хит</span>
                 <div class="program-icon">⭐</div>
                 <h3 class="program-name">Групповой тренинг</h3>
                 <p class="program-desc">Интенсивная работа в малой группе. Подростки учатся общению, лидерству и командной работе.</p>
@@ -139,7 +188,7 @@
                     <li>Формат: очно, группа 6–8 человек</li>
                     <li>Возраст: 13–17 лет</li>
                 </ul>
-                <a href="https://wa.me/" class="btn btn-coral" target="_blank">Записаться</a>
+                <a href="https://wa.me/79137837896" class="btn btn-coral" target="_blank">Записаться</a>
             </div>
 
             <div class="program-card">
@@ -151,34 +200,113 @@
                     <li>Формат: онлайн или очно</li>
                     <li>Без ограничений по возрасту</li>
                 </ul>
-                <a href="https://wa.me/" class="btn btn-teal" target="_blank">Записаться</a>
+                <a href="https://wa.me/79137837896" class="btn btn-teal" target="_blank">Записаться</a>
             </div>
 
         </div>
     </div>
 </section>
 
+<!-- ПРОГРАММЫ (8 КАРТОЧЕК — ПЛЕЙСХОЛДЕРЫ) -->
+<section id="programs" class="section-padding section-light">
+    <div class="container">
+
+        <h2 class="section-title section-title--center">Программы</h2>
+        <p class="section-subtitle section-subtitle--center">Тематические курсы и интенсивы для подростков и родителей</p>
+
+        <div class="programs-list-grid">
+
+            <article class="program-tile">
+                <div class="program-tile__icon">🪞</div>
+                <h3 class="program-tile__title">Кто «Я»?</h3>
+                <p class="program-tile__desc">Программа самопознания. Помогаем подростку понять свои сильные стороны, ценности и желания — формируется здоровая самооценка и опора для осознанного выбора пути.</p>
+                <p class="program-tile__meta">Длительность и формат — уточняется</p>
+                <a href="#contacts" class="program-tile__link">Подробнее →</a>
+            </article>
+
+            <article class="program-tile">
+                <div class="program-tile__icon">🤝</div>
+                <h3 class="program-tile__title">Я и общество</h3>
+                <p class="program-tile__desc">Учимся выстраивать отношения со сверстниками и взрослыми, работать в команде и находить своё место в коллективе. Подросток становится увереннее в любых социальных ситуациях.</p>
+                <p class="program-tile__meta">Длительность и формат — уточняется</p>
+                <a href="#contacts" class="program-tile__link">Подробнее →</a>
+            </article>
+
+            <article class="program-tile">
+                <div class="program-tile__icon">💛</div>
+                <h3 class="program-tile__title">Эмоциональный интеллект</h3>
+                <p class="program-tile__desc">Подросток учится распознавать свои эмоции и справляться со стрессом без импульсивных реакций. Меньше конфликтов дома и в школе, теплее отношения с близкими.</p>
+                <p class="program-tile__meta">Длительность и формат — уточняется</p>
+                <a href="#contacts" class="program-tile__link">Подробнее →</a>
+            </article>
+
+            <article class="program-tile">
+                <div class="program-tile__icon">⏰</div>
+                <h3 class="program-tile__title">Тайм-менеджмент</h3>
+                <p class="program-tile__desc">Учимся планировать время между учёбой, хобби и отдыхом без перегруза. Подросток успевает больше, меньше прокрастинирует и спокойнее переживает дедлайны.</p>
+                <p class="program-tile__meta">Длительность и формат — уточняется</p>
+                <a href="#contacts" class="program-tile__link">Подробнее →</a>
+            </article>
+
+            <article class="program-tile">
+                <div class="program-tile__icon">🎭</div>
+                <h3 class="program-tile__title">Мастерство речи и актёрское мастерство</h3>
+                <p class="program-tile__desc">Развиваем уверенную речь и умение держаться перед аудиторией. Через актёрские техники снимаем зажимы и страх выступлений.</p>
+                <p class="program-tile__meta">Длительность и формат — уточняется</p>
+                <a href="#contacts" class="program-tile__link">Подробнее →</a>
+            </article>
+
+            <article class="program-tile">
+                <div class="program-tile__icon">🧭</div>
+                <h3 class="program-tile__title">Профориентация</h3>
+                <p class="program-tile__desc">Помогаем подростку увидеть свои сильные стороны и осознанно выбрать направление. Снижается риск ошибки с профессией, растёт мотивация к учёбе.</p>
+                <p class="program-tile__meta">Длительность и формат — уточняется</p>
+                <a href="#contacts" class="program-tile__link">Подробнее →</a>
+            </article>
+
+            <article class="program-tile">
+                <div class="program-tile__icon">🎬</div>
+                <h3 class="program-tile__title">Психодрама</h3>
+                <p class="program-tile__desc">Групповой метод: через ролевые сцены подросток лучше понимает свои чувства и отношения. Прорабатываем страхи и тревоги — растут самооценка и уверенность.</p>
+                <p class="program-tile__meta">Длительность и формат — уточняется</p>
+                <a href="#contacts" class="program-tile__link">Подробнее →</a>
+            </article>
+
+            <article class="program-tile">
+                <div class="program-tile__icon">💰</div>
+                <h3 class="program-tile__title">Финансовая грамотность</h3>
+                <p class="program-tile__desc">Формируем здоровое отношение к деньгам: планирование, бюджет, разумные решения. Закладываем основу самостоятельной взрослой жизни.</p>
+                <p class="program-tile__meta">Длительность и формат — уточняется</p>
+                <a href="#contacts" class="program-tile__link">Подробнее →</a>
+            </article>
+
+        </div>
+    </div>
+</section>
 
 <!-- КОМАНДА КОУЧЕЙ -->
 <section id="team" class="section-padding">
     <div class="container">
 
-        <h2 class="section-title" style="text-align: center;">Наша команда</h2>
-        <p class="section-subtitle" style="text-align: center;">Специалисты с опытом работы с подростками</p>
+        <h2 class="section-title section-title--center">Наша команда</h2>
+        <p class="section-subtitle section-subtitle--center">Специалисты с опытом работы с подростками</p>
 
         <div class="team-grid">
 
             <div class="team-card">
-                <img src="images/coach-1.jpg" alt="Коуч" class="team-photo">
+                <div class="team-photo team-photo--placeholder" aria-hidden="true">КК</div>
                 <div class="team-info">
-                    <h3 class="team-name">Имя Фамилия</h3>
-                    <p class="team-role">Коуч по уверенности</p>
-                    <p class="team-desc">Работает с подростками над самооценкой и принятием себя. Опыт 5 лет.</p>
+                    <h3 class="team-name">Ксения Кей</h3>
+                    <p class="team-role">Коуч по уверенности и публичной речи</p>
+                    <p class="team-desc">
+                        Педагог актёрского мастерства и речи, наставник публичных выступлений.
+                        Более 10 лет учит быть в центре внимания и легко справляться с зажимами.
+                    </p>
                 </div>
             </div>
 
             <div class="team-card">
-                <img src="images/coach-2.jpg" alt="Коуч" class="team-photo">
+                <div class="team-photo team-photo--placeholder" aria-hidden="true">ИФ</div>
                 <div class="team-info">
                     <h3 class="team-name">Имя Фамилия</h3>
                     <p class="team-role">Коуч по коммуникации</p>
@@ -187,7 +315,7 @@
             </div>
 
             <div class="team-card">
-                <img src="images/coach-3.jpg" alt="Коуч" class="team-photo">
+                <div class="team-photo team-photo--placeholder" aria-hidden="true">ИФ</div>
                 <div class="team-info">
                     <h3 class="team-name">Имя Фамилия</h3>
                     <p class="team-role">Коуч по целеполаганию</p>
@@ -199,17 +327,177 @@
     </div>
 </section>
 
-<!-- ЦЕНЫ -->
-<section id="prices">
+<!-- ОТЗЫВЫ / ДОВЕРИЕ -->
+<section id="reviews" class="section-padding section-light">
+    <div class="container">
+
+        <h2 class="section-title section-title--center">Что говорят родители и подростки</h2>
+        <p class="section-subtitle section-subtitle--center">Несколько историй из практики</p>
+
+        <div class="reviews-grid">
+
+            <figure class="review-card">
+                <div class="review-stars" aria-label="Оценка 5 из 5">★★★★★</div>
+                <p class="review-text">
+                    «Попала к настоящему профессионалу. Встреча прошла в комфортной обстановке, Любовь помогла мне определиться с выбором. Очень благодарна, работаем дальше!»
+                </p>
+                <figcaption class="review-author">
+                    <span class="review-avatar" aria-hidden="true">В</span>
+                    <strong>Виктория</strong>
+                </figcaption>
+            </figure>
+
+            <figure class="review-card">
+                <div class="review-stars" aria-label="Оценка 5 из 5">★★★★★</div>
+                <p class="review-text">
+                    «Любовь помогла найти решение и выйти из неуверенности в себе. Быстро удалось поднять самооценку и найти причину выгорания. Бережно и профессионально провела меня к результату.»
+                </p>
+                <figcaption class="review-author">
+                    <span class="review-avatar" aria-hidden="true">Н</span>
+                    <strong>Наталья</strong>
+                </figcaption>
+            </figure>
+
+            <figure class="review-card">
+                <div class="review-stars" aria-label="Оценка 5 из 5">★★★★★</div>
+                <p class="review-text">
+                    «После нескольких встреч качество жизни изменилось в разы. Был опыт с другими психологами, но такого результата не было. Инструменты самопомощи реально помогают.»
+                </p>
+                <figcaption class="review-author">
+                    <span class="review-avatar" aria-hidden="true">А</span>
+                    <strong>Анна</strong>
+                </figcaption>
+            </figure>
+
+            <figure class="review-card">
+                <div class="review-stars" aria-label="Оценка 5 из 5">★★★★★</div>
+                <p class="review-text">
+                    «Очень понравилась сессия! Всё легко, выявили проблему ненавязчиво, через разговор. Это 100% профессионал своего дела, смело обращайтесь!»
+                </p>
+                <figcaption class="review-author">
+                    <span class="review-avatar" aria-hidden="true">Е</span>
+                    <strong>Елена</strong>
+                </figcaption>
+            </figure>
+
+        </div>
+    </div>
 </section>
 
-<!-- ОТЗЫВЫ -->
-<section id="reviews">
+<!-- КАК ПРОХОДЯТ ЗАНЯТИЯ -->
+<section id="how" class="section-padding">
+    <div class="container">
+
+        <h2 class="section-title section-title--center">Как проходят занятия</h2>
+        <p class="section-subtitle section-subtitle--center">
+            Подбираем формат под запрос и расписание семьи
+        </p>
+
+        <div class="how-grid">
+
+            <div class="how-item">
+                <div class="how-icon">👤</div>
+                <h3 class="how-title">Индивидуальные встречи</h3>
+                <p class="how-desc">Очно в Новосибирске или онлайн из любого города — выбираете удобный формат.</p>
+            </div>
+
+            <div class="how-item">
+                <div class="how-icon">👥</div>
+                <h3 class="how-title">Групповые программы</h3>
+                <p class="how-desc">Проходят очно в малых группах — каждому подростку хватает внимания.</p>
+            </div>
+
+            <div class="how-item how-item--accent">
+                <div class="how-icon">🎁</div>
+                <h3 class="how-title">Первая консультация — бесплатно</h3>
+                <p class="how-desc">Знакомимся, обсуждаем запрос и вместе подбираем подходящий формат.</p>
+            </div>
+
+        </div>
+    </div>
 </section>
 
-<!-- КОНТАКТЫ -->
+<!-- ФИНАЛЬНЫЙ CTA -->
+<section id="cta" class="cta-section">
+    <div class="container">
+        <div class="cta-inner">
+            <h2 class="cta-title">Не знаете, с чего начать?</h2>
+            <p class="cta-text">
+                Запишитесь на короткую бесплатную консультацию — обсудим запрос и подберём подходящий формат.
+            </p>
+            <div class="cta-buttons">
+                <a href="https://wa.me/79137837896" class="btn btn-coral" target="_blank">Написать в WhatsApp</a>
+                <a href="https://vk.com/liubov_psiholog" class="btn btn-outline-light" target="_blank">Написать ВКонтакте</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- КОНТАКТЫ / ФУТЕР -->
 <footer id="contacts">
+    <div class="container">
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+                <img src="images/logo.png" alt="СтартЗдесь" class="footer-logo">
+                <p class="footer-tagline">Тренинги и коучинг для подростков и родителей. Бережно, без давления.</p>
+                <p class="footer-format">Формат: очно и онлайн</p>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Разделы</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#programs">Программы</a></li>
+                    <li><a href="#team">Команда</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Связаться</h4>
+                <ul class="footer-links">
+                    <li><a href="tel:+79137837896">+7 913 783-78-96</a></li>
+                    <li><a href="https://wa.me/79137837896" target="_blank">WhatsApp</a></li>
+                    <li><a href="https://vk.com/liubov_psiholog" target="_blank">ВКонтакте</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4 class="footer-title">Адреса в Новосибирске</h4>
+                <ul class="footer-links footer-addresses">
+                    <li>ул. Потанинская, 3а<br><span>каб. 404</span></li>
+                    <li>ул. Первомайская, 150/1<br><span>каб. 301А</span></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 СтартЗдесь. Все права защищены.</span>
+            <span>Сделано с заботой о подростках</span>
+        </div>
+    </div>
 </footer>
+
+<script>
+    // мобильное меню
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    if (toggle && links) {
+        toggle.addEventListener('click', () => {
+            const open = links.classList.toggle('is-open');
+            toggle.setAttribute('aria-expanded', String(open));
+        });
+        links.addEventListener('click', (e) => {
+            if (e.target.tagName === 'A') {
+                links.classList.remove('is-open');
+                toggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
+</script>
 
 </body>
 
